@@ -1,151 +1,31 @@
-# Steps to run the code in each file.
+# Scientific Programming Concepts PH502/ACM40660 Autumn 2022
 
-Each folder contains the code in C langauge and the compiled versions of it. Below are the commands used to run the code in respective folder.
+Fork this repository into your github account. From there; 
 
-<strong>Week 2</strong> </br>
-$ gcc -o Conversion Conversion.c -lm <br>
-$ ./Conversion <br>
-<Strong>Output</Strong> <br>
-The number of digits is 25 <br>
-inum=33554431,  fnum=33554432.000000, inum in binary=1111111111111111111111111 <br>
- <br>
-$ gcc -o Sum Sum.c <br>
-$ ./Sum <br>
-<strong>Output</strong> <br>
- Sum1=7.485478 <br>
- Sum2=7.485472 <br>
- Difference between the two is 0.000007 <br>
- <br>
-<strong>Week 3 </strong><br>
-$ gcc -o Trapezoidal Trapezoidal.c -lm <br>
-$ ./Trapezoidal  <br>
-<Strong>Output</Strong> <br>
-Trapezoidal result: 0.695045 <br>
-log(2) result: 0.693147 <br>
- <br>
-<strong>Week 4</strong> <br>
-$ gcc -o Practical4 Practical4.c -lm <br>
-$ ./Practical4  <br>
-<strong>Output</strong> <br>
-Result: 0.695045 <br>
-Actual value: 0.693147 <br>
- <br>
-<strong>Week 5</strong> <br>
-$ gcc -o Fibonacci Fibonacci.c <br>
-$ ./Fibonacci  <br>
-<Strong>Output</Strong> <br>
-Enter Value: 5 <br>
-Fibonacci of 5 is 5 <br>
- <br>
-$ gcc -o Maclaurin Maclaurin.c -lm <br>
-$ ./Maclaurin  <br>
-<Strong>Output</Strong> <br>
-Enter the precision for Maclaurin Series: 0.1 <br>
-The difference at x = -0.900000 between them is 1.2940859075 <br>
-The difference at x = -0.800000 between them is 0.8671285782 <br>
-The difference at x = -0.700000 between them is 0.6213395965 <br>
-The difference at x = -0.600000 between them is 0.4792925465 <br>
-The difference at x = -0.500000 between them is 0.3542130679 <br>
-The difference at x = -0.400000 between them is 0.2577284087 <br>
-The difference at x = -0.300000 between them is 0.1788570762 <br>
-The difference at x = -0.200000 between them is 0.1116376630 <br>
-The difference at x = -0.100000 between them is 0.0526822722 <br>
-The difference at x = -0.000000 between them is 0.0000000000 <br>
-The difference at x = 0.100000 between them is 0.0479904376 <br>
-The difference at x = 0.200000 between them is 0.0912266658 <br>
-The difference at x = 0.300000 between them is 0.1317017364 <br>
-The difference at x = 0.400000 between them is 0.1705517152 <br>
-The difference at x = 0.500000 between them is 0.2103720317 <br>
-The difference at x = 0.600000 between them is 0.2561489952 <br>
-The difference at x = 0.700000 between them is 0.2846673199 <br>
-The difference at x = 0.800000 between them is 0.3563029545 <br>
-The difference at x = 0.900000 between them is 0.4637203041 <br>
- <br>
-<strong>Week 6</strong> <br>
-$ gcc -o MatrixMul MatrixMul.c <br>
-$ ./MatrixMul  <br>
-<Strong>Output</Strong> <br>
-Matrix A <br>
-  0&emsp;1&emsp;2  <br> 
-  1&emsp;2&emsp;3   <br>
-  2&emsp;3&emsp;4   <br>
-  3&emsp;4&emsp;5   <br>
-  4&emsp;5&emsp;6   <br>
-Matrix B <br>
-  0&emsp;-1&emsp;-2&emsp;-3   <br>
-  1&emsp;&nbsp;0&emsp;-1&emsp;-2   <br>
-  2&emsp;&nbsp;1&emsp;&nbsp;0&emsp;-1   <br>
-Matrix C <br>
-  5&emsp;2&emsp;&nbsp;-1&emsp;&nbsp;&nbsp;-4   <br>
-  8&emsp;2&emsp;&nbsp;-4&emsp;&nbsp;-10   <br>
- 11&emsp;2&emsp;&nbsp;-7&emsp;&nbsp;-16   <br>
- 14&emsp;2&emsp;-10&emsp;&nbsp;-22   <br>
- 17&emsp;2&emsp;-13&emsp;&nbsp;-28   <br>
- <br>
-<strong>Use of Makefile</strong> <br>
-$ make clean <br>
-<strong>Output</strong> <br>
-rm *.o <br>
-$ make <br>
-<strong>Output</strong> <br>
-cc -c -O3 main.c <br>
-cc -o mmc main.o -lm <br>
-$ ./mmc <br>
-<strong>Output</strong> <br>
-Matrix A <br>
-  0&emsp;1&emsp;2 <br>
-  1&emsp;2&emsp;3 <br>
-  2&emsp;3&emsp;4 <br>
-  3&emsp;4&emsp;5 <br>
-  4&emsp;5&emsp;6 <br>
-Matrix B <br>
-  0&emsp;-1&emsp;-2&emsp;-3   <br>
-  1&emsp;&nbsp;0&emsp;-1&emsp;-2   <br>
-  2&emsp;&nbsp;1&emsp;&nbsp;0&emsp;-1   <br>
-Matrix C <br>
-  5&emsp;2&emsp;&nbsp;-1&emsp;&nbsp;&nbsp;-4   <br>
-  8&emsp;2&emsp;&nbsp;-4&emsp;&nbsp;-10   <br>
- 11&emsp;2&emsp;&nbsp;-7&emsp;&nbsp;-16   <br>
- 14&emsp;2&emsp;-10&emsp;&nbsp;-22   <br>
- 17&emsp;2&emsp;-13&emsp;&nbsp;-28   <br>
- <br>
-<strong>Week 7</strong> <br>
-$ gcc -o Practical7 Practical7.c <br>
-$ ./Practical7  <br>
-<strong>Output</strong> <br>
-Enter polynomial order: 13 <br>
-e term for order 13 is 1.00000000000000 <br>
-e term for order 13 is 0.50000000000000 <br>
-e term for order 13 is 0.16666666666667 <br>
-e term for order 13 is 0.04166666666667 <br>
-e term for order 13 is 0.00833333333333 <br>
-e term for order 13 is 0.00138888888889 <br>
-e term for order 13 is 0.00019841269841 <br>
-e term for order 13 is 0.00002480158730 <br>
-e term for order 13 is 0.00000275573192 <br>
-e term for order 13 is 0.00000027557319 <br>
-e term for order 13 is 0.00000002505211 <br>
-e term for order 13 is 0.00000000208768 <br>
-e term for order 13 is 0.00000000051758 <br>
-e is estimated as 2.71828182880375, with difference 0.00000000034471 <br>
- <br>
-$ gcc -o PtrsAndMemAlloc PtrsAndMemAlloc.c <br>
-$ ./PtrsAndMemAlloc  <br>
-<strong>Output</strong> <br>
-Enter size of array: 5 <br>
-a[0]=1 <br>
-a[1]=1 <br>
-a[2]=1 <br>
-a[3]=1 <br>
-a[4]=1 <br>
- <br>
-<strong>Week 8</strong> <br>
-$ gcc -o Practical8 Practical8.c  <br>
-$ ./Practical8  <br>
-<strong>Output</strong> <br>
-Enter 1st value: 10 <br>
-Enter 2nd value: 8 <br>
-GCD of 10 & 8 <br>
-Recursive result: 2.000000 <br>
-Iterative result: 2.000000 <br>
- <br>
+- Clone the repo onto your local machine/sciprog using `git clone`
+- Create your own branch using `git branch` with the format `{FirstName}_{LastName}_{Brightspace/Blackboard}`. Eg. `John_Smith_Blackboard`, then use `git checkout branch_name` to work on that branch
+- Create, edit and upload files using the `git add`, `commit` and `push` commands
+    - NB: You will need to generate a “*[personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)*” to push changes to this repo. Follow the instructions in the link above carefully, and when prompted for username and password (for first push only), use your “personal access token” as your password. 
+
+For a step by step video guide, refer back to recording of Practical 2
+
+For the duration of the semester you will need to update the repository regularly with the practical codes which will be covered in the live demo sessions on Tuesdays. Remember the differences between a local repository and the online version, so you will need to ‘push’ your changes rather than just committing them.
+
+This assignment will contribute 10% of your total marks to this module, so to ensure that you get full marks;
+
+All practicals from Week 2 onwards should be included in the repo and the code from each practical should be able to be run and compiled (on sciprog) once cloned by another user. You can use your own solution or the material covered in the demos.
+
+Each practical is clearly commented and the repository should be well structured and laid out (i.e. have a folder for each practical). This includes having sufficient README markdown or .txt files explaining the contents of each folder, and instructions on how to use/run the programs (these do not need to be exhaustive, enough information so that the reader understands your code).
+
+Although there is no “weekly deadline”, you should update this repo weekly following each practical with clear and concise commit messages. 
+Capture the output of the `git status` and `git log` commands ( eg. `git log > gitlog_output.txt` will write the output to a file called `gitlog_output.txt`), and submit this to Brightspace/Blackboard. 
+
+We are looking for stepwise development by committing code (and comments) on a regular basis. Marks will be deducted for;
+- Not commenting your code and poorly maintained/updated repositories
+- Uploaded code does not compile/unable to run
+- Ambiguous commit messages
+- All-in-one commit/push (i.e. uploading everything at once)
+
+NB: This repository should only be used for the practical sessions covered in the live demo sessions ONLY. Assignments 1 & 2 should not be added to the repo. If the regular assignments are uploaded to your repository then you will receive 0% for this assignment. Other assignments must be uploaded **separately** onto Brightspace or Blackboard.
+
+There are plentiful resources on git introductions, such as https://guides.github.com/introduction/git-handbook/ 
